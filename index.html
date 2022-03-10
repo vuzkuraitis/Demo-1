@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+      integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/96a010ff08.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&family=Roboto:wght@300;500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <div class="banner">
+          <div class="colorLogo">
+            <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+          </div>
+          <div class="text">
+            <h1>1,500</h1>
+            <h6>Due Fees</h6>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="colorLogo1">
+            <i class="fa-solid fa-graduation-cap fa-2xl"></i>
+          </div>
+          <div class="text">
+            <h1>08</h1>
+            <h6>Result Published</h6>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="colorLogo2">
+            <i class="fa-solid fa-square-pen fa-2xl"></i>
+          </div>
+          <div class="text">
+            <h1>15</h1>
+            <h6>Upcoming Exams</h6>
+          </div>
+        </div>
+        <div class="banner">
+          <div class="colorLogo3">
+            <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
+          </div>
+          <div class="text">
+            <h1>10,000</h1>
+            <h6>Total Expenses</h6>
+          </div>
+        </div>
+      </div>
+      <div class="middle background">
+        <div class="noticeBoard">
+          <h4>Notice Board</h4>
+        </div>
+        <div class="noticeBoardContent"></div>
+      </div>
+      <div class="bottom background">
+        <div class="expenses">
+          <h4>All Expenses</h4>
+          <div class="searchfield">
+            <input
+              type="number"
+              name="expensesId"
+              id="expensesId"
+              placeholder="Search by ID..."
+            />
+            <input
+              type="text"
+              name="expensesDate"
+              id="expensesDate"
+              placeholder="Search by Date..."
+            />
+            <button type="submit">Search</button>
+          </div>
+        </div>
+        <div class="expensesContent"></div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

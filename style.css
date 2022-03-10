@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  background-color: #f0f0f0;
+  font-family: "Open Sans", sans-serif;
+  max-width: 50rem;
+  min-width: 20rem;
+  margin: 0 auto;
+  width: 50%;
+}
+.banner {
+  background-color: #ffffff;
+  display: flex;
+  height: 7rem;
+  width: 45%;
+}
+button {
+  background-color: #21364e;
+  border-radius: 0.8rem;
+  border: 2px solid #f0f0f0;
+  color: #ffffff;
+  font-size: 0.7rem;
+  height: 2rem;
+  text-transform: uppercase;
+  width: 5rem;
+}
+.colorLogo {
+  align-items: center;
+  background-color: #ff0000;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 7rem;
+}
+.colorLogo1 {
+  align-items: center;
+  background-color: #53ceff;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 7rem;
+}
+.colorLogo2 {
+  align-items: center;
+  background-color: #6bcf91;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 7rem;
+}
+.colorLogo3 {
+  align-items: center;
+  background-color: #aae7ff;
+  display: flex;
+  height: 100%;
+  justify-content: center;
+  width: 7rem;
+}
+i::before {
+  color: #ffffff;
+}
+input {
+  background-color: #faf6f6;
+  border-radius: 0.8rem;
+  border: 2px solid #f0f0f0;
+  font-size: 0.7rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+  width: 7rem;
+}
+.background {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+}
+.noticeBoard,
+.expenses {
+  align-items: center;
+  display: flex;
+  background-color: #ffffff;
+  border-bottom: 2px solid #f0f0f0;
+  height: 4rem;
+  justify-content: space-between;
+  padding-left: 2rem;
+  width: 95%;
+}
+.noticeBoardContent,
+.expensesContent {
+  background-color: #ffffff;
+  height: 20rem;
+  margin-bottom: 1rem;
+  width: 95%;
+}
+.searchfield {
+  display: flex;
+  justify-content: space-around;
+  padding-right: 3rem;
+  width: 60%;
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  margin: 0 2rem;
+}
+.text > h1 {
+  margin: 1rem 0;
+}
+.top {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 18rem;
+  justify-content: space-around;
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+  .banner {
+    width: 80%;
+  }
+  .background {
+    width: 85%;
+  }
+  .expenses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 8rem;
+    justify-content: space-around;
+  }
+  .top {
+    height: 36rem;
+  }
+  .noticeBoardContent,
+  .expensesContent {
+    height: 30rem;
+  }
+  .searchfield {
+    width: 90%;
+    padding: 0;
+  }
+}
