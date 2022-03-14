@@ -31,36 +31,36 @@
           <div class="colorLogo">
             <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
           </div>
-          <div class="text">
+          <div class="toptext">
             <h1>1,500</h1>
-            <h6>Due Fees</h6>
+            <h6>Due Payable</h6>
           </div>
         </div>
         <div class="banner">
           <div class="colorLogo1">
             <i class="fa-solid fa-graduation-cap fa-2xl"></i>
           </div>
-          <div class="text">
+          <div class="toptext">
             <h1>08</h1>
-            <h6>Result Published</h6>
+            <h6>Spent Money</h6>
           </div>
         </div>
         <div class="banner">
           <div class="colorLogo2">
             <i class="fa-solid fa-square-pen fa-2xl"></i>
           </div>
-          <div class="text">
+          <div class="toptext">
             <h1>15</h1>
-            <h6>Upcoming Exams</h6>
+            <h6>Notices</h6>
           </div>
         </div>
         <div class="banner">
           <div class="colorLogo3">
             <i class="fa-solid fa-money-bill-1 fa-2xl"></i>
           </div>
-          <div class="text">
+          <div class="toptext">
             <h1>10,000</h1>
-            <h6>Total Expenses</h6>
+            <h6>Most Expensive Type</h6>
           </div>
         </div>
       </div>
@@ -74,22 +74,38 @@
         <div class="expenses">
           <h4>All Expenses</h4>
           <div class="searchfield">
-            <input
-              type="number"
-              name="expensesId"
-              id="expensesId"
-              placeholder="Search by ID..."
-            />
-            <input
-              type="text"
-              name="expensesDate"
-              id="expensesDate"
-              placeholder="Search by Date..."
-            />
-            <button type="submit">Search</button>
+            <form name="search">
+              <input
+                type="search"
+                name="expensesId"
+                id="expensesId"
+                placeholder="Search by ID..."
+              />
+              <input
+                type="search"
+                name="expensesDate"
+                id="expensesDate"
+                placeholder="Search by Date..."
+              />
+              <button type="submit">Search</button>
+            </form>
           </div>
         </div>
-        <div class="expensesContent"></div>
+        <div class="expensesContent">
+          <table>
+            <thead>
+              <tr>
+                <th>ID No</th>
+                <th>Expense Type</th>
+                <th>Amount</th>
+                <th>Status</th>
+                <th>E-mail</th>
+                <th>Date</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
