@@ -115,15 +115,16 @@ function largestExpenseType(data) {
   //   pasiimam tik unikalius type
   const types = [...new Set(elements.map((item) => item.type))];
 
+  // Calculate sums of each unique type
   const sums = types.map((item) => ({
     type: item,
     amount: elements
       .filter((element) => element.type === item)
       .reduce((a, v) => a + v.amount, 0),
   }));
-
+  // sort types by amount size
   sums.sort((a, b) => b.amount - a.amount);
-
+  // display only first sort type
   largestExpenseTypeLocation.textContent = sums[0].type;
 
   console.log(sums[0]);
